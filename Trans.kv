@@ -1,0 +1,17 @@
+<MainWidget>:
+    orientation: "vertical"
+    Label:
+        text: "Bim"
+        size_hint: 1, .2
+    Label:
+        text: root.my_text
+        size_hint: 1, 1
+    Label:
+        text: root.my_text2
+        size_hint: 1, 1
+    Button:
+        id: transbutton
+        text: "translate"
+        size_hint: .5, .5
+        pos_hint: { "center_x": .5 }
+        on_press: root.on_button_click()
